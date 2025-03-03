@@ -1,8 +1,6 @@
 # predMemRes
 
-
-```markdown
-# predMemRes: Predicting meropenem resistance phenotype based on the genome sequence of Klebsiella pneumoniae
+## predMemRes: Predicting meropenem resistance phenotype based on the genome sequence of Klebsiella pneumoniae
 
 ---
 
@@ -37,4 +35,4 @@ predMemRes.sh -a genome -o output_tag
 
 2. **Resistance Gene Report**: `output_tag__resistanceGenes.txt`  
    - Lists detected resistance genes and related mechanisms (e.g., carbapenemase genes, porin mutations).
-```
+
