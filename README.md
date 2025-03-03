@@ -1,14 +1,41 @@
 # predMemRes
-predMemRes: Predicting meropenem resistance phenotype based on the genome sequence of Klebsiella pneumoniae
 
-Usage:
-Help information:
+
+```markdown
+# predMemRes: Predicting meropenem resistance phenotype based on the genome sequence of _Klebsiella pneumoniae_
+
+---
+
+## Usage
+**Help information**:  
+```bash
 ./predMemRes.sh -h
-Usage: predMemRes.sh -a genome -o output_tag
--a|--genome the input genome file
--o|output_tag the output_tag
+```
 
-Usage:
+**Basic command**:  
+```bash
+predMemRes.sh -a genome -o output_tag
+```
+
+### Parameters
+| Parameter           | Description                          |
+|---------------------|--------------------------------------|
+| `-a` / `--genome`   | The input genome file (FASTA format) |
+| `-o` / `--output_tag` | Prefix for output files             |
+
+---
+
+## Example
+```bash
 ./predMemRes.sh -a genome.fasta -o output_tag
+```
 
-The program will generate two files as a result of running: 1) Output_tag_prediction.txt, which contains phenotype prediction information, resistance or sensitivity, and corresponding probabilities. 2) Output_tag__resistanceGenes.txt, this file contains information on the resistance genes and resistance related genes of the input genome.
+---
+
+## Output Files
+1. **Prediction Result**: `output_tag_prediction.txt`  
+   - Contains phenotype prediction (`Resistance`/`Sensitivity`) and corresponding probabilities.
+
+2. **Resistance Gene Report**: `output_tag__resistanceGenes.txt`  
+   - Lists detected resistance genes and related mechanisms (e.g., carbapenemase genes, porin mutations).
+```
