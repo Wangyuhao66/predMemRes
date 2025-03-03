@@ -2,7 +2,7 @@
 
 
 ```markdown
-# predMemRes: Predicting meropenem resistance phenotype based on the genome sequence of _Klebsiella pneumoniae_
+# predMemRes: Predicting meropenem resistance phenotype based on the genome sequence of Klebsiella pneumoniae
 
 ---
 
