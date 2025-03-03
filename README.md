@@ -30,7 +30,6 @@ predMemRes.sh -a genome -o output_tag
 ./predMemRes.sh -a genome.fasta -o output_tag
 ```
 
----
 
 ## Output Files
 1. **Prediction Result**: `output_tag_prediction.txt`  
